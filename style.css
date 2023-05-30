@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #c8e8e3, #12cce4, #00a7ff, #0077ff, #2a0cf6);
+    background-repeat: no-repeat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box{
+    position: relative;
+    width: 750px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.box h4{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #555;
+    left: 25%;
+}
+.box textarea{
+    position: relative;
+    width: 80% !important;
+    height: 250px;
+    resize: none;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 1.5rem;
+    color: #555;
+}
+.box p{
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #555;
+}
+.box p span{
+    width: 80px;
+    height: 80px;
+    background-color: #6565e7;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.box p span.blink{
+    box-shadow: 0px 0px 6px #6565e7,0px 0px 12px #6565e7,0px 0px 18px #6565e7,0px 0px 24px #6565e7;
+}
+@media (max-width:768px) {
+    .box{
+        width: 580px;
+    }
+    .box p{
+        font-size: 1.5rem;
+        right: 26px;
+    }
+}
+@media (max-width:600px) {
+    .box{
+        width: 300px;
+    }
+    .box h4
+    {
+        font-size: 1.4rem;
+        left: 30px;
+    }
+    .box textArea{
+        width: 100% !important;
+    }
+    .box p{
+        top: 0;
+        right: 0;
+        position: relative;
+        transform: translateY(0);
+        margin-bottom: 10px;
+        border-top: 5px;
+    }
+}
